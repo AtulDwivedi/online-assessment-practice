@@ -7,8 +7,7 @@ import java.util.PriorityQueue;
 
 /**
  * @author Atul Dwivedi
- * <p>
- * @see <a href="https://leetcode.com/discuss/interview-question/1194238/paypal-max-tasks-that-can-be-completed-in-given-budget">Solution</a>
+ * @see <a href="https://leetcode.com/discuss/interview-question/1194238/paypal-max-tasks-that-can-be-completed-in-given-budget">Reference</a>
  */
 public class PerformMaxTasksWithinGivenBudget {
 
