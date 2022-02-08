@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /**
  * @author Atul Dwivedi
- * @see <a href="https://leetcode.com/discuss/interview-question/1194238/paypal-max-tasks-that-can-be-completed-in-given-budget">Reference</a>
+ * @see <a href="https://www.hackerearth.com/problem/algorithm/beautiful-numbers-05de0f51-101121ca/discussion/can-someone-discuss--1f3c0ffd/">Reference</a>
  */
 public class BeautifulNumbers {
 
