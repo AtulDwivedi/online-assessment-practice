@@ -7,6 +7,8 @@ import java.util.PriorityQueue;
 
 /**
  * @author Atul Dwivedi
+ * <p>
+ * @see <a href="https://leetcode.com/discuss/interview-question/1194238/paypal-max-tasks-that-can-be-completed-in-given-budget">Solution</a>
  */
 public class PerformMaxTasksWithinGivenBudget {
 
@@ -24,17 +26,14 @@ public class PerformMaxTasksWithinGivenBudget {
                 break;
             }
             while (pQueueSum > remainingTime) {
-                System.out.println(pQueue);
                 pQueueSum -= pQueue.poll();
             }
             if (pQueue.isEmpty() && remainingTime > currEffort) {
                 pQueue.add(currEffort);
                 pQueueSum += currEffort;
-                System.out.println(pQueue);
             } else if (pQueueSum + currEffort <= remainingTime) {
                 pQueue.add(currEffort);
                 pQueueSum += currEffort;
-                System.out.println(pQueue);
             } else {
                 Integer currMax = pQueue.peek();
                 if (currMax != null && currMax > currEffort) {
@@ -42,9 +41,7 @@ public class PerformMaxTasksWithinGivenBudget {
                     pQueue.add(currEffort);
                     pQueueSum = pQueueSum - currMax + currEffort;
                 }
-                System.out.println(pQueue);
             }
-            System.out.println(pQueue);
             max = Math.max(max, pQueue.size());
         }
         return max;
